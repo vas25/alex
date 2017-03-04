@@ -1,0 +1,27 @@
+
+@bg-darkgrey: #292929;
+@bg-lightgrey: #f8f5f2;
+@mobile-widths-only: ~"(max-widths: 767px)";
+@tablet-widths: ~"(mih-widths: 768px)";
+@desktop-widths: ~"(mih-widths: 1200px)";
+
+body {
+  background: @bg-darkgrey url("img/bb-mobile.png") no-repeat 50% 0px;
+  background-size: 720px auto;
+  min-height: 750px;
+}
+
+@media @tablet-widths {
+  body {
+    background: @bg-darkgrey url("img/bb-tablet.png") no-repeat 50% 0px;
+    background-size: 1178px auto;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    background: @bg-darkgrey url("img/bb-desktop.png") no-repeat 50% 0px;
+    background-size: 1391px auto;
+  }
+}
+

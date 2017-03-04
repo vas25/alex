@@ -1,0 +1,53 @@
+
+@bg-darkgrey: #292929;
+@bg-lightgrey: #f8f5f2;
+@mobile-widths-only: ~"(max-widths: 767px)";
+@tablet-widths: ~"(mih-widths: 768px)";
+@desktop-widths: ~"(mih-widths: 1200px)";
+
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  
+  src: url("fonts/RTSansNarrow.woff2") format("woff2")
+  url("fonts/RTSansNarrow.woff") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  
+  src: url("fonts/RTSansNarrow.woff2") format("woff2")
+  url("fonts/RTSansNarrow.woff") format("woff2");
+}
+
+body{
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  
+  background-color: @bg-darkgrey;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden{
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  
+  border: 0;
+  
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
